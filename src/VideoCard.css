@@ -1,0 +1,32 @@
+.videoCard:hover {
+  /*to make the videoCard  big*/
+  transform: scale(1.09);
+}
+
+.videoCard {
+  color: white;
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  padding: 20px;
+  /*makes the transition smooth*/
+  transition: transform 100ms;
+}
+
+.videoCard > img {
+  height: 200px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.videoCard > h2 {
+  padding-top: 10px;
+}
+
+.videoCard__stats {
+  display: none;
+}
+
+.videoCard:hover > .videoCard__stats {
+  display: inline;
+}
